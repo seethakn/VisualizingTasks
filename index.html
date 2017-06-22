@@ -1,0 +1,54 @@
+<!-- Visualizing Tasks - using google charts -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Visualizing Tasks</title>
+
+  <!-- Replaced with personal Font Awesome CDN link -->
+  <script src="https://use.fontawesome.com/058e0da5fd.js"></script>
+
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <h1>Minion Tasks</h1>
+  <form id="todoForm" onsubmit="getFormData(); return false;">
+    <fieldset>
+      <legend>Minion Pool - who should do it?</legend>
+      <label for="bob">Bob</label>
+      <input type="radio" name="minion" id="bob" value="Bob" required>
+      <label for="dave">Dave</label>
+      <input type="radio" name="minion" id="dave" value="Dave">
+      <label for="kevin">Kevin</label>
+      <input type="radio" name="minion" id="kevin" value="Kevin">
+      <label for="phil">Phil</label>
+      <input type="radio" name="minion" id="phil" value="Phil">
+      <label for="stuart">Stuart</label>
+      <input type="radio" name="minion" id="stuart" value="Stuart">
+    </fieldset>
+    <fieldset>
+      <legend>Task Information</legend>
+      <label for="taskDifficulty">Task Difficulty</label>
+      <select id="taskDifficulty" required>
+        <option value="Simple">Simple</option>
+        <option value="Demanding">Demanding</option>
+        <option value="Challenging">Challenging</option>
+        <option value="Intimidating">Intimidating</option>
+      </select>
+      <label for="taskDescription">Task Information</label>
+      <input type="text" id="taskDescription" size="90" placeholder="secure a shrink ray" required>
+    </fieldset>
+    <input type="submit" id="assignTask" value="Assign Task">
+  </form>
+  <div id="displayData">
+    <div id="pieHoleChart"></div>
+    <ul id="todoTasksList"></ul>
+  </div>
+</div>
+</body>
+</html>

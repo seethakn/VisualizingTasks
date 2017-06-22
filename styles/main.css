@@ -1,0 +1,65 @@
+/********** Global Styles *************/
+html {
+	background-color: rgb(30,106,159);
+	color: rgb(30,106,159);
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	background: white;
+  opacity: 0.9;
+  width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+}
+
+/************* Header Styles ***********/
+h1 {
+	font-family: LatoLight, Helvetica, sans-serif;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	margin: 0;
+	line-height: 1;
+	color: rgb(245,220,80);
+  font-size: 2rem;
+	font-weight: bold;
+}
+
+/*********** Form Element Styles ********************/
+input[type="submit"]{
+  border-radius: 0px 2px 2px 0px;
+  background-color: rgb(245,220,80);
+  font-weight: 300;
+  color: rgb(30,106,159);
+  padding: 0.35em 0.75em;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.3em;
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(30,106,159);
+  color: rgb(245,220,80);
+}
+
+#displayData {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	    padding: 1rem;
+}
+
+/****************************************************/
+/* For wider screens greater than 480px or 30em, load background image */
+@media only screen and (min-width: 30em){
+html {
+	background-image: url('../images/minionsatwork.jpeg');
+	background-color: rgb(30,106,159);
+	background-repeat: no-repeat;
+  background-position: top;
+}
